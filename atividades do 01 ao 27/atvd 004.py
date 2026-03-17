@@ -7,7 +7,8 @@ print('Os números ímpares que são múltiplos  de 03 são: ')
 s = 0
 cont = 0
 for c in range(3, 501, 6):
-    print(c)
+    if c % 3 == 0:
+        print(c)
     sleep(0.1)
     s += c
     cont += 1
