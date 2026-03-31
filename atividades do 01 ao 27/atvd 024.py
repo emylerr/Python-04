@@ -19,17 +19,17 @@ while True:
     print(', Deu par' if tot % 2 == 0 else ', Deu ímpar')
     if tip == 'P':
         if tot % 2 == 0:
-            print('Você ganhou!')
+            print('Você\033[32m ganhou!\033[m')
             v += 1
         else:
-            print('Você perdeu!')
+            print('Você\033[31m perdeu!\033[m')
             break
     elif tip == 'I':
         if tot % 2 == 1:
-            print('Você venceu!')
+            print('Você\033[32m ganhou!\033[m')
             v += 1
         else:
-            print('Você perdeu!')
+            print('Você\033[31m perdeu!\033[m')
             break
     print('Vamos jogar novamente...')
     sleep(1.5)
